@@ -9,3 +9,13 @@ cardOne = "Queen";
 cardTwo = "Queen";
 cardThree = "King";
 cardFour = "King";
+
+if (cardOne == cardTwo) || (cardThree == cardFour) 
+{
+	alert('You have found a match!');
+
+}
+else 
+{
+	alert ('Sorry try again.');
+}
