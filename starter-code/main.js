@@ -32,7 +32,7 @@ function createBoard()
     createCard.className = 'card';
     createCard.setAttribute('data-card', cards[i]);
     console.log (createCard);
-    createCard.addEventListener('click', isTwoCards());
+    createCard.addEventListener('click', isTwoCards);
     console.log (createCard);
     gameBoard.appendChild(createCard);
   }
@@ -40,7 +40,7 @@ function createBoard()
 
 createBoard();
 function isTwoCards() {
-  
+  //console.log ("In isTwoCards")
   cardsInPlay.push(this.getAttribute('data-card'));
 	console.log(this.getAttribute('data-card'));
 	if (this.getAttribute('data-card') === 'cheshire') {
