@@ -20,14 +20,22 @@ console.log("JS file is connected to HTML! Woo!")
 // // 	alert ('Sorry try again.');
 // // }
 
+var cards = null;
+var cardsInPlay = null;
+var gameBoard = null;
+
+function gameInit()
+{
 var cards = ['rabbit','cheshire','rabbit','cheshire'];
 var cardsInPlay = [];
 var gameBoard = document.getElementById('game-board');
+}
 
 function createBoard() 
 {
   for (var i=0; i<cards.length; i++) 
   {
+  	gameInit();
     var createCard = document.createElement('div');
     createCard.className = 'card';
     createCard.setAttribute('data-card', cards[i]);
@@ -38,7 +46,6 @@ function createBoard()
   }
 }
 
-createBoard();
 function isTwoCards() {
   //console.log ("In isTwoCards")
   cardsInPlay.push(this.getAttribute('data-card'));
@@ -54,13 +61,14 @@ function isTwoCards() {
     cardsInPlay = [];
   }
 }
+
 function isMatch(cards) {
   if (cards[0] === cards[1]) {
     alert("You found a match!");
-    alert(createBoard());
+    createBoard();
   } else {
     alert("Sorry, try again.");
-
   }
 }
 
+createBoard();
