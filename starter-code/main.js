@@ -21,17 +21,12 @@ console.log("JS file is connected to HTML! Woo!")
 // // }
 
 
-var cards;
-var cardsInPlay;
-var gameBoard;
-
+var cards = ['rabbit','cheshire','rabbit','cheshire'];
+var cardsInPlay = [];
+var gameBoard = document.getElementById('game-board');
 
 function createBoard() 
 {
-  var cards = ['rabbit','cheshire','rabbit','cheshire'];
-  var cardsInPlay = [];
-  var gameBoard = document.getElementById('game-board');
-
   for (var i=0; i<cards.length; i++) 
   {
     var createCard = document.createElement('div');
