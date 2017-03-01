@@ -20,7 +20,7 @@ console.log("JS file is connected to HTML! Woo!")
 // // 	alert ('Sorry try again.');
 // // }
 
-var cards = ['rabbit', 'rabbit', 'cheshire', 'cheshire'];
+var cards = ['rabbit','cheshire','rabbit','cheshire'];
 var cardsInPlay = [];
 var gameBoard = document.getElementById('game-board');
 
