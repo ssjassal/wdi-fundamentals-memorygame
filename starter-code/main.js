@@ -1,40 +1,66 @@
-console.log("JS file is connected to HTML! Woo!")
-var cardOne = null;
-var cardTwo = null;
-var cardThree = null;
-var cardFour = null;
+// console.log("JS file is connected to HTML! Woo!")
+// var cardOne = null;
+// var cardTwo = null;
+// var cardThree = null;
+// var cardFour = null;
 
 
-cardOne = "Queen";
-cardTwo = "Queen";
-cardThree = "King";
-cardFour = "King";
+// cardOne = "Queen";
+// cardTwo = "Queen";
+// cardThree = "King";
+// cardFour = "King";
 
-// if (cardOne == cardTwo) || (cardThree == cardFour) 
-// {
-// 	alert('You have found a match!');
+// // if (cardOne == cardTwo) || (cardThree == cardFour) 
+// // {
+// // 	alert('You have found a match!');
 
-// }
-// else 
-// {
-// 	alert ('Sorry try again.');
-// }
+// // }
+// // else 
+// // {
+// // 	alert ('Sorry try again.');
+// // }
 
+var cards = ['rabbit', 'rabbit', 'cheshire', 'cheshire'];
+var cardsInPlay = [];
 var gameBoard = document.getElementById('game-board');
 
-// function that will create your board
-function createBoard() {
-  // loop through your cards array to create card elements for your board
-  for (var i=0; i<cards.length; i++) {
-
-    // create a div element which will be used as a card
+function createBoard() 
+{
+  for (var i=0; i<cards.length; i++) 
+  {
     var createCard = document.createElement('div');
-
-    // add a class to the card element which will help link styling
     createCard.className = 'card';
-
-    // append the card to the board
+    createCard.setAttribute('data-card', cards[i]);
+    createCard.addEventListener('click', isTwoCards);
+    gameBoard.appendChild(createCard);
     gameBoard.appendChild(createCard);
   }
 
 }
+
+function isTwoCards() {
+  
+  cardsInPlay.push(this.getAttribute('data-card'));
+	console.log(this.getAttribute('data-card'));
+	if (this.getAttribute('data-card') === 'cheshire') {
+		this.innerHTML = "<img src='/Users/soniyajassal/Fundamentals/wdi-fundamentals-memorygame/starter-code/images/cheshire_final.png'>"; // king
+	} else {
+		this.innerHTML = "<img src='h/Users/soniyajassal/Fundamentals/wdi-fundamentals-memorygame/starter-code/images/rabbit_final.png"; //queen
+	}
+
+  if (cardsInPlay.length === 2) {
+    isMatch(cardsInPlay);
+    cardsInPlay = [];
+  }
+}
+
+function isMatch(cards) {
+  if (cards[0] === cards[1]) {
+    alert("You found a match!");
+  } else {
+    alert("Sorry, try again.");
+
+  }
+}
+
+createBoard()
