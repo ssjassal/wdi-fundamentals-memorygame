@@ -45,7 +45,7 @@ function createBoard()
     gameBoard.appendChild(createCard);
   }
 }
-
+createBoard();
 function isTwoCards() {
   //console.log ("In isTwoCards")
   cardsInPlay.push(this.getAttribute('data-card'));
@@ -71,4 +71,3 @@ function isMatch(cards) {
   }
 }
 
-createBoard();
