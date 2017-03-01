@@ -35,11 +35,9 @@ function createBoard()
     gameBoard.appendChild(createCard);
     gameBoard.appendChild(createCard);
   }
-
-createBoard();
-
 }
 
+createBoard();
 function isTwoCards() {
   
   cardsInPlay.push(this.getAttribute('data-card'));
