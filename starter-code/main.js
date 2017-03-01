@@ -57,6 +57,7 @@ function isTwoCards() {
 function isMatch(cards) {
   if (cards[0] === cards[1]) {
     alert("You found a match!");
+    createBoard();
   } else {
     alert("Sorry, try again.");
 
