@@ -32,6 +32,7 @@ function createBoard()
     createCard.className = 'card';
     createCard.setAttribute('data-card', cards[i]);
     createCard.addEventListener('click', isTwoCards);
+    console.log(createCard);
     gameBoard.appendChild(createCard);
   }
 }
