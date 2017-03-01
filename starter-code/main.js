@@ -44,9 +44,9 @@ function isTwoCards() {
   cardsInPlay.push(this.getAttribute('data-card'));
 	console.log(this.getAttribute('data-card'));
 	if (this.getAttribute('data-card') === 'cheshire') {
-		this.innerHTML = "<img src='/Users/soniyajassal/Fundamentals/wdi-fundamentals-memorygame/starter-code/images/cheshire_final.png'>"; // king
+		this.innerHTML = "<img src='/Users/soniyajassal/Fundamentals/wdi-fundamentals-memorygame/starter-code/images/cheshire_final.png'>"; 
 	} else {
-		this.innerHTML = "<img src='/Users/soniyajassal/Fundamentals/wdi-fundamentals-memorygame/starter-code/images/rabbit_final.png"; //queen
+		this.innerHTML = "<img src='/Users/soniyajassal/Fundamentals/wdi-fundamentals-memorygame/starter-code/images/rabbit_final.png'>";
 	}
 
   if (cardsInPlay.length === 2) {
@@ -54,7 +54,6 @@ function isTwoCards() {
     cardsInPlay = [];
   }
 }
-
 function isMatch(cards) {
   if (cards[0] === cards[1]) {
     alert("You found a match!");
