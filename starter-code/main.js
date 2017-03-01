@@ -63,4 +63,4 @@ function isMatch(cards) {
   }
 }
 
-createBoard()
+createBoard();
