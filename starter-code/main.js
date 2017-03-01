@@ -33,7 +33,6 @@ function createBoard()
     createCard.setAttribute('data-card', cards[i]);
     createCard.addEventListener('click', isTwoCards);
     gameBoard.appendChild(createCard);
-    gameBoard.appendChild(createCard);
   }
 }
 
