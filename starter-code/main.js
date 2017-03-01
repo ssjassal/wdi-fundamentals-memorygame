@@ -31,8 +31,9 @@ function createBoard()
     var createCard = document.createElement('div');
     createCard.className = 'card';
     createCard.setAttribute('data-card', cards[i]);
-    createCard.addEventListener('click', isTwoCards);
-    console.log(createCard);
+    console.log (createCard);
+    createCard.addEventListener('click', isTwoCards());
+    console.log (createCard);
     gameBoard.appendChild(createCard);
   }
 }
