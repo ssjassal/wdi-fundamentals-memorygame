@@ -1,4 +1,4 @@
-// console.log("JS file is connected to HTML! Woo!")
+console.log("JS file is connected to HTML! Woo!")
 // var cardOne = null;
 // var cardTwo = null;
 // var cardThree = null;
