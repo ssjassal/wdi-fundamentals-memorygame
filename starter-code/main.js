@@ -46,7 +46,7 @@ function isTwoCards() {
 	if (this.getAttribute('data-card') === 'cheshire') {
 		this.innerHTML = "<img src='/Users/soniyajassal/Fundamentals/wdi-fundamentals-memorygame/starter-code/images/cheshire_final.png'>"; // king
 	} else {
-		this.innerHTML = "<img src='h/Users/soniyajassal/Fundamentals/wdi-fundamentals-memorygame/starter-code/images/rabbit_final.png"; //queen
+		this.innerHTML = "<img src='/Users/soniyajassal/Fundamentals/wdi-fundamentals-memorygame/starter-code/images/rabbit_final.png"; //queen
 	}
 
   if (cardsInPlay.length === 2) {
