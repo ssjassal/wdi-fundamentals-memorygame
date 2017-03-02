@@ -4,7 +4,7 @@ header {
 }
 
 body {
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	color: white
 	background-size: cover;
 	background: rgba(135,21,15,1);
