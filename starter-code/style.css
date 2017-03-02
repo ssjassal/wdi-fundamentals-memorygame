@@ -135,10 +135,10 @@ li {
 }
 
 .board {
-	position: center;
+	/*position: center;*/
     height: 50%;
     width: 50%;
-/*    outline: 5px solid black;*/
+   	outline: 5px solid black;
  /*   box-sizing:border-box;*/
     display: inline-block;
 }
