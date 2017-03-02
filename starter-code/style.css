@@ -39,7 +39,7 @@ nav{
 */
 h1 {
 	color: red;
-	/*text-align: center;*/
+	text-align: center;
 /*	text-transform: uppercase;*/
 	font-size: 100px;
 	/*font-family: 'Londrina Sketch', cursive;*/
@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-	text-align: center;
+	/*text-align: center;*/
 	/*font-family: 'Londrina Sketch', cursive;*/
 	color: white;
 	/*text-transform: uppercase;*/
@@ -89,7 +89,7 @@ p{
 article {
      max-width: 900px;
      /*padding: 10px;*/
-  	/*margin: 0 auto;*/
+     /*margin: 0 auto;*/
     
 }
 img {
