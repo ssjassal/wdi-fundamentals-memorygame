@@ -138,8 +138,8 @@ li {
 	/*position: center;*/
     height: 50%;
     width: 50%;
-   	outline: 5px solid black;
- /*   box-sizing:border-box;*/
+ 	/*outline: 5px solid black;*/
+ 	/*box-sizing:border-box;*/
     display: inline-block;
 }
 
