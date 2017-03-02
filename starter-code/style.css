@@ -130,7 +130,7 @@ li {
 	background: white;
 	border-radius: 10px;
 	margin: 8%;
-	float: left;
+	
 	/*align-items: center;*/
 }
 
@@ -141,8 +141,8 @@ li {
  	/*outline: 5px solid black;*/
  	/*box-sizing:border-box;*/
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    float: left auto;
+
 }
 
 .clearfix:after {
@@ -160,4 +160,9 @@ li {
     margin-left: auto;	
 }*/
 
+/*#id {
+
+	margin-left: auto;
+    margin-right: auto;
+}*/
 
