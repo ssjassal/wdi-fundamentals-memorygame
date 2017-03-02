@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-
+	text-align: center;
 	/*font-family: 'Londrina Sketch', cursive;*/
 	color: white;
 	/*text-transform: uppercase;*/
@@ -141,6 +141,8 @@ li {
  	/*outline: 5px solid black;*/
  	/*box-sizing:border-box;*/
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .clearfix:after {
